@@ -45,3 +45,6 @@ body {
 #brand-item li{
   padding: 3vh 4vh;
 }
+.card{
+  width: 20rem;
+}
