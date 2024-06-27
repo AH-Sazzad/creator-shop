@@ -39,3 +39,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
 }
+#brand-item{
+  list-style: none;
+}
+#brand-item li{
+  padding: 3vh 4vh;
+}
