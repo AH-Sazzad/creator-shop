@@ -116,3 +116,17 @@ p {
 .card img {
   width: 20rem;
 }
+#card {
+  width: 100%;
+  box-shadow: none;
+}
+#card .btn {
+  background-color: #e02c6d;
+}
+#card .card-body .card-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#card .card-body .card-text {
+  width: 70%;
+}
