@@ -130,3 +130,87 @@ p {
 #card .card-body .card-text {
   width: 70%;
 }
+#footer {
+  background-color: #0a0826;
+  padding: 2rem 0;
+  margin-top: 5rem;
+}
+#footer h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 3rem;
+}
+#footer h6 {
+  text-align: center;
+  margin-top: 0.4rem;
+}
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 9vh;
+  background: var(--bg);
+}
+
+#icon ul {
+  display: flex;
+  position: relative;
+  gap: 4rem;
+}
+
+#icon ul li {
+  position: relative;
+  list-style: none;
+  width: 2vh;
+  height: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#icon ul li:before {
+  content: "";
+  position: absolute;
+  inset: 1vh;
+  box-shadow: 0 0 0 10px var(--clr), 0 0 0 20px var(--bg), 0 0 0 22px var(--clr);
+  transition: 0.5s;
+}
+
+#icon ul li:hover:before {
+  inset: 0;
+}
+
+#icon ul li:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  transform: rotate(45deg);
+}
+#icon ul li:hover {
+  z-index: 1000;
+  transform: scale(0.75);
+}
+
+#icon ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--clr);
+  font-size: 1.5em;
+  z-index: 10;
+  transition: 0.5s;
+}
+
+#icon ul li a:hover {
+  font-size: 3em;
+  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr))
+    drop-shadow(0 0 60px var(--clr));
+}
